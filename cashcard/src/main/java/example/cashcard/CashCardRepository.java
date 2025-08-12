@@ -1,4 +1,7 @@
 package example.cashcard;
 
-public class CashCardRepository {
+import org.springframework.data.repository.CrudRepository;
+
+interface CashCardRepository extends CrudRepository<CashCard, Long> {
+
 }
