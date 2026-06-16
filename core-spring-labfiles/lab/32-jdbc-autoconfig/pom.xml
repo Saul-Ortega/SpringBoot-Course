@@ -26,19 +26,6 @@
         <!-- TO-DO-02 : Refactor from discrete Spring Framework
              dependencies to JDBC and Test Spring Boot Starters -->
 
-        <!-- Needed for the Spring JdbcTemplate -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId>
-        </dependency>
-
-        <!-- Spring Integration testing support -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-
         <!-- Database - DO NOT MODIFY -->
         <dependency>
             <groupId>org.hsqldb</groupId>
@@ -63,6 +50,10 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
             </plugin>
+             <plugin>
+                 <groupId>org.springframework.boot</groupId>
+                 <artifactId>spring-boot-maven-plugin</artifactId>
+             </plugin>
         </plugins>
     </build>
 </project>
